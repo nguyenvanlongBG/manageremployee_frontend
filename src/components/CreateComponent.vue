@@ -49,10 +49,10 @@ const axios=require('axios');
     axios.post('http://localhost:8000/api/posts/createPost',
     this.post,
     {headers:{Authorization: 'Bearer '+token}})
-            .then(function(){
+            .then(()=>{
                 console.log(this.post)
             })
-            .catch(function(){
+            .catch(()=>{
                  console.log(this.post)
             })
 }
